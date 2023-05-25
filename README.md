@@ -10,14 +10,18 @@
 3. 你也可以这样做
    1. 先将整个图片手动放大到整个页面
    2. 将loadResource函数替换为
-   `
-   void loadResource() {
+   
+` 
+void loadResource() 
+{
+
     BeginBatchDraw();
     IMAGE img;
     loadimage(&img, _T("./image/0.jpg"));
     putimage(0, 0, &img);
     FlushBatchDraw();
     EndBatchDraw();
-  }
+}
+`
+
 4. 另外我还改了一下配置，要不直接给你传代码了 :blush:
-   `
